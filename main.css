@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap"); /*font-family: "East Sea Dokdo", cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap"); /*font-family: "VT323", monospace;*/
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap"); /*font-family: 'Libre Barcode 39 Text', cursive;*/
+
+body {
+  color: #16fce5;
+  background-color: #05080d;
+  font-family: "VT323", monospace;
+}
+
+video {
+  position: absolute;
+  width: 99vw;
+  height: 99vh;
+  background-color: transparent;
+}
+
+/*** Loading Screen ***/
+#load_screen {
+  background-color: #05080d;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+#loading {
+  position: absolute;
+  z-index: 11;
+  color: #16fce5;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  line-height: 0px;
+  font-size: 45px;
+}
+
+/*** React App ***/
+#reactapp {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 85%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.icon {
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 80px;
+}
+
+.icon img {
+  margin: auto;
+  max-width: 50%;
+  background-color: transparent;
+}
+
+.icon p {
+  margin: auto;
+  margin-top: -7px;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 22px;
+}
+
+/*** Logo and Wallpaper ***/
+#wallpaper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #05080d;
+  opacity: 0.5;
+  height: 100vh;
+  width: 100vw;
+}
+
+#wallpaper {
+  position: static;
+  z-index: -1;
+}
+
+#logo {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: #16fce5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#barcode {
+  position: absolute;
+  color: #344b47;
+  left: -17%;
+  top: 17%;
+  text-align: center;
+  font-family: "Libre Barcode 39 Text", cursive;
+  white-space: nowrap;
+  font-size: 115px;
+  transform: rotate(-12deg);
+  z-index: 1;
+}
+
+#Logotext {
+  margin: auto;
+  text-align: center;
+  color: #05080d;
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 115px;
+  line-height: 0px;
+  z-index: 2;
+}
