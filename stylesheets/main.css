@@ -14,6 +14,7 @@ video {
   width: 99vw;
   height: 99vh;
   background-color: transparent;
+  z-index: -5;
 }
 
 /*** Loading Screen ***/
@@ -38,15 +39,18 @@ video {
   font-size: 45px;
 }
 
-/*** React App ***/
+/*** React Apps ***/
 #iconContainer {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: space-between;
-  top: 82%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  min-width: 300px;
+  max-width: 850px;
+  width: 85vw;
+  margin: auto;
+  top: 3vh;
+  left: 0.5vw;
+  flex-shrink: 1;
   z-index: 5;
 }
 
@@ -61,26 +65,28 @@ video {
 
 .icon {
   cursor: pointer;
-  width: 125px;
-  height: 125px;
+  width: calc(100px + 8vw);
+  height: calc(130px + 3vh);
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 80px;
+  margin: calc(12px + 3vh) calc(10px + 1vw);
 }
 
 .icon img {
   margin: auto;
-  max-width: 50%;
+  margin-bottom: calc(1px + 0.001vh);
+  max-width: 65px;
+  width: 30vw;
   background-color: transparent;
 }
 
 .icon p {
   margin: auto;
-  /*  margin-top: -0px;*/
+  margin-top: calc(1px + 1.3vh);
   text-align: center;
-  line-height: 1.3rem;
-  font-size: 22px;
+  line-height: calc(6px + 2vh);
+  font-size: 25px;
 }
 
 /*** Logo and Wallpaper ***/
@@ -99,44 +105,27 @@ video {
 
 #wallpaper {
   position: static;
-  z-index: -1;
+  z-index: -3;
 }
 
 #logo {
-  margin: 0;
+  position: relative;
+  margin: auto;
+  width: 80vw;
+  height: 80vh;
+  max-height: 500px;
+  max-width: 658px;
+  z-index: 5;
+  object-fit: contain;
+}
+
+#desktop {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  background-color: #16fce5;
+  margin: 27vh auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-#barcode {
-  position: absolute;
-  color: #344b47;
-  left: -17%;
-  top: 17%;
-  text-align: center;
-  font-family: "Libre Barcode 39 Text", cursive;
-  white-space: nowrap;
-  font-size: 115px;
-  transform: rotate(-12deg);
-  z-index: 1;
-}
-
-#Logotext {
-  margin: auto;
-  text-align: center;
-  color: #05080d;
-  font-family: "East Sea Dokdo", cursive;
-  font-size: 115px;
-  line-height: 0px;
-  z-index: 2;
+  align-items: baseline;
+  width: 98vw;
+  height: 50vh;
 }

@@ -44,8 +44,25 @@
   padding: 10px;
   margin-top: 10px;
   display: block;
+  font-size: 1.2rem;
 }
 
+/*** About Me Window ***/
+#skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.skill {
+  width: 150px;
+  margin: 8px;
+}
+
+.skill i {
+  color: #00c6c0;
+}
 /*** Contact Window ***/
 #contactIcons {
   display: flex;
@@ -55,15 +72,13 @@
   justify-content: center;
   flex-wrap: column;
 }
-#contactStuff p {
-  font-size: 1.2rem;
-}
+
 #contactStuff a {
   display: block;
   text-decoration: none;
   color: #00c6c0;
   background: #05080d;
-  padding: 7px 2px;
+  padding: 7px;
   font-weight: bold;
   border-radius: 15px;
   border: 3px solid #00c6c0;
@@ -74,7 +89,7 @@
   cursor: pointer;
   color: #00c6c0;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: auto;
 }
 
