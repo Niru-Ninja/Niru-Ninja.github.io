@@ -3,7 +3,6 @@
   color: #ecedee;
   background: #132130;
   width: 33vw;
-  max-height: 50vh;
   min-width: 185px;
   border: 2px solid #1e5060;
   display: none;
@@ -11,7 +10,6 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
-
 .windowHeader {
   position: fixed;
   display: flex;
@@ -21,13 +19,11 @@
   background: #132130;
   border-bottom: 2px solid #1e5060;
 }
-
 .windowHeader h3 {
   margin: 5px auto auto 5px;
   padding-bottom: 5px;
   padding-left: 5px;
 }
-
 .windowButton {
   cursor: pointer;
   background: #103434;
@@ -39,7 +35,6 @@
   height: 60%;
   margin: 2px;
 }
-
 .windowContent {
   padding: 10px;
   margin-top: 10px;
@@ -54,15 +49,130 @@
   flex-wrap: wrap;
   align-items: center;
 }
-
 .skill {
   width: 150px;
   margin: 8px;
 }
-
 .skill i {
   color: #00c6c0;
 }
+
+/*** My Work Window ***/
+#myWorkStuff {
+  margin-top: 60px;
+}
+
+#slider {
+  position: relative;
+  width: 60%;
+  height: 15vw;
+  margin: auto;
+  font-family: "Helvetica Neue", sans-serif;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+input[type="radio"] {
+  position: relative;
+  top: 108%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  margin: 0 15px 0 0;
+  opacity: 0.4;
+  transform: translateX(-83px);
+  cursor: pointer;
+  background-color: green;
+}
+
+input[type="radio"]:nth-child(5) {
+  margin-right: 0px;
+}
+
+input[type="radio"]:checked {
+  opacity: 1;
+}
+
+#slider label,
+#slider label img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 400ms ease;
+  object-fit: contain;
+}
+
+/* Active Slide */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  transform: translate3d(20%, 0, -100px);
+  filter: brightness(50%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* Next to Next Slide */
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  transform: translate3d(40%, 0, -250px);
+  filter: brightness(50%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* Previous to Previous Slide */
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  transform: translate3d(-40%, 0, -250px);
+  filter: brightness(50%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* Previous Slide */
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  transform: translate3d(-20%, 0, -100px);
+  filter: brightness(50%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+#afterSlider {
+  margin-top: 80px;
+}
+
 /*** Contact Window ***/
 #contactIcons {
   display: flex;
@@ -72,7 +182,6 @@
   justify-content: center;
   flex-wrap: column;
 }
-
 #contactStuff a {
   display: block;
   text-decoration: none;
@@ -92,7 +201,6 @@
   font-size: 1.3rem;
   margin: auto;
 }
-
 #contactStuff i {
   bottom: 3%;
   vertical-align: middle;
