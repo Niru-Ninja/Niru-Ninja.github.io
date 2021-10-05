@@ -42,13 +42,11 @@ video {
   position: relative;
   display: flex;
   justify-content: space-between;
-  min-width: 300px;
   max-width: 850px;
-  width: 85vw;
+  width: 75vw;
   margin: auto;
-  top: 3vh;
+  height: auto;
   left: 0.5vw;
-  flex-shrink: 1;
   z-index: 5;
 }
 
@@ -63,12 +61,12 @@ video {
 
 .icon {
   cursor: pointer;
-  width: calc(100px + 8vw);
-  height: calc(130px + 3vh);
+  width: 8vw;
+  height: 13vh;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  margin: calc(12px + 3vh) calc(10px + 1vw);
+  margin: auto calc(10px + 1vw);
 }
 
 .icon:hover {
@@ -80,7 +78,7 @@ video {
   margin: auto;
   margin-bottom: calc(1px + 0.001vh);
   max-width: 65px;
-  width: 30vw;
+  width: 8vw;
   background-color: transparent;
 }
 
@@ -88,7 +86,7 @@ video {
   margin: auto;
   margin-top: calc(1px + 1.3vh);
   text-align: center;
-  line-height: calc(6px + 2vh);
+  line-height: 18px;
   font-size: 25px;
 }
 
@@ -115,7 +113,7 @@ video {
   position: relative;
   margin: auto;
   width: 80vw;
-  height: 80vh;
+  height: 55vh;
   max-height: 500px;
   max-width: 658px;
   z-index: 5;
@@ -124,11 +122,10 @@ video {
 
 #desktop {
   position: absolute;
-  margin: 27vh auto;
+  margin: calc(20px + 10vh) auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: baseline;
   width: 98vw;
-  height: 50vh;
+  height: 80vh;
 }
