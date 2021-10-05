@@ -58,6 +58,7 @@
 }
 
 /*** My Work Window ***/
+
 #myWorkStuff {
   margin-top: 60px;
 }
@@ -112,7 +113,6 @@ input[type="radio"]:checked {
   object-fit: contain;
 }
 
-/* Active Slide */
 #s1:checked ~ #slide1,
 #s2:checked ~ #slide2,
 #s3:checked ~ #slide3,
@@ -121,7 +121,6 @@ input[type="radio"]:checked {
   transform: translate3d(0%, 0, 0px);
 }
 
-/* Next Slide */
 #s1:checked ~ #slide2,
 #s2:checked ~ #slide3,
 #s3:checked ~ #slide4,
@@ -133,7 +132,6 @@ input[type="radio"]:checked {
   backdrop-filter: blur(10px);
 }
 
-/* Next to Next Slide */
 #s1:checked ~ #slide3,
 #s2:checked ~ #slide4,
 #s3:checked ~ #slide5,
@@ -145,7 +143,6 @@ input[type="radio"]:checked {
   backdrop-filter: blur(10px);
 }
 
-/* Previous to Previous Slide */
 #s1:checked ~ #slide4,
 #s2:checked ~ #slide5,
 #s3:checked ~ #slide1,
@@ -157,7 +154,6 @@ input[type="radio"]:checked {
   backdrop-filter: blur(10px);
 }
 
-/* Previous Slide */
 #s1:checked ~ #slide5,
 #s2:checked ~ #slide1,
 #s3:checked ~ #slide2,
