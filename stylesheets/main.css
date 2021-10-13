@@ -67,11 +67,13 @@ video {
   align-items: center;
   flex-direction: column;
   margin: auto calc(10px + 1vw);
-  transition: all 0.2s ease-in-out;
+  transition: none;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 
 .icon:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: none;
 }
 
 .icon img {

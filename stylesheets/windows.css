@@ -44,6 +44,31 @@
   font-size: 1.2rem;
 }
 
+#aboutMe {
+  left: 5%;
+  top: 5%;
+  width: 30vw;
+}
+#aboutMe .windowHeader {
+  width: 30vw;
+}
+#myWork {
+  left: 7%;
+  top: 10%;
+  width: 70vw;
+}
+#myWork .windowHeader {
+  width: 70vw;
+}
+#contact {
+  left: 52%;
+  top: 60%;
+  width: 25vw;
+}
+#contact .windowHeader {
+  width: 25vw;
+}
+
 /*** About Me Window ***/
 #skills {
   width: 100%;
