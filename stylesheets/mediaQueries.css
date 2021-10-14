@@ -50,15 +50,39 @@
     right: 10%;
     top: 10%;
   }
+  #slider {
+    /*width: 46.4%;*/
+    width: 80%;
+    height: 30vw;
+  }
+  label a {
+    width: 90.3%;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   #contact {
     left: 5%;
     top: 5%;
-    width: 60vw;
+    width: 80vw;
   }
   #contact .windowHeader {
-    width: 60vw;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .window {
+    max-height: 98vh;
+  }
+  #aboutMe {
+    width: 85vw;
+    height: 90vh;
+  }
+  #aboutMe .windowHeader {
+    width: 85vw;
+  }
+  .project img {
+    right: 30%;
   }
 }
