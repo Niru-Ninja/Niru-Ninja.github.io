@@ -44,12 +44,17 @@
   font-size: 1.2rem;
   max-height: 80vh;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #aboutMe {
   left: 5%;
   top: 5%;
   width: 30vw;
+  overflow-y: auto !important;
+}
+#aboutMe .windowContent{
+  overflow-y: hidden;
 }
 #aboutMe .windowHeader {
   width: 30vw;
